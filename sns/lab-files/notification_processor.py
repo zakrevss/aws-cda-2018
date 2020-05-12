@@ -1,4 +1,8 @@
+import json
+
 def lambda_handler(event, context):
-    message = event['Records'][0]['Sns']['Message']
-    print("From SNS: " + message)
-    return message
+    # TODO implement
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
